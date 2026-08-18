@@ -1,6 +1,7 @@
 import pytest
-from src.it_sizing.sizing_calculator import calculate_it_load
+
 from src.it_sizing.rack_allocation import allocate_racks
+from src.it_sizing.sizing_calculator import calculate_it_load
 from src.it_sizing.topology import ZONES
 
 

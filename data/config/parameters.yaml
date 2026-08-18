@@ -4,7 +4,36 @@
 facility:
   gross_generation_mw: 15.0
   target_pue: 1.25
-  it_capacity_mw: 12.0  # derived: gross / pue
+  it_capacity_mw: 12.0  # derived: gross / pue (Phase 2 default)
+
+# 3-Phase Deployment Strategy
+# PUE improves with scale: chillers run closer to optimal load at higher utilization.
+# Zone deployment is strategic: cloud first (fastest revenue), AI immersion last (most expensive).
+phases:
+  phase_1:
+    name: "Initial Deployment"
+    gross_mw: 10.0
+    target_pue: 1.30
+    zones:
+      zone_a: { rack_count: 180, total_mw: 3.6 }
+      zone_b: { rack_count: 60, total_mw: 3.0 }
+      zone_c: { rack_count: 10, total_mw: 1.0 }
+  phase_2:
+    name: "Full Deployment"
+    gross_mw: 15.0
+    target_pue: 1.25
+    zones:
+      zone_a: { rack_count: 250, total_mw: 5.0 }
+      zone_b: { rack_count: 80, total_mw: 4.0 }
+      zone_c: { rack_count: 30, total_mw: 3.0 }
+  phase_3:
+    name: "Full Build-Out"
+    gross_mw: 20.0
+    target_pue: 1.20
+    zones:
+      zone_a: { rack_count: 330, total_mw: 6.6 }
+      zone_b: { rack_count: 120, total_mw: 6.0 }
+      zone_c: { rack_count: 40, total_mw: 4.0 }
 
 cooling:
   target_pue_tropical: 1.25

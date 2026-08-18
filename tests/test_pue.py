@@ -1,9 +1,13 @@
 import pytest
-from src.pue_analysis.pue_calculator import (
-    calculate_pue, calculate_dcie, calculate_overhead_ratio,
-    calculate_thermal_load, energy_breakdown,
-)
+
 from src.pue_analysis.cooling_comparison import comparison_table
+from src.pue_analysis.pue_calculator import (
+    calculate_dcie,
+    calculate_overhead_ratio,
+    calculate_pue,
+    calculate_thermal_load,
+    energy_breakdown,
+)
 from src.pue_analysis.tropical_benchmark import get_tropical_pue_target
 
 

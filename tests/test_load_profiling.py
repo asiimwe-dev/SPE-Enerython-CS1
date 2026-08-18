@@ -1,9 +1,11 @@
-import pytest
-import pandas as pd
-from src.load_profiling.scenarios import SCENARIOS
-from src.load_profiling.profile_generator import generate_load_profiles, save_profiles
-from pathlib import Path
 import tempfile
+from pathlib import Path
+
+import pandas as pd
+import pytest
+
+from src.load_profiling.profile_generator import generate_load_profiles, save_profiles
+from src.load_profiling.scenarios import SCENARIOS
 
 
 class TestScenarios:
