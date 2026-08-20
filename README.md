@@ -37,8 +37,8 @@ We model a phased deployment that scales from 10 MW to 20 MW gross generation, w
 
 ```bash
 # Clone and install
-git clone <repo-url>
-cd SPE-Energython-2026
+git clone <https://github.com/asiimwe-dev/SPE-Enerython-CS1.git>
+cd SPE-Energython-CS1
 make install
 
 # Generate all outputs
@@ -108,7 +108,7 @@ SPE-Energython-2026/
 │   │   ├── it-sizing-spec.md
 │   │   ├── load-profiling-spec.md
 │   │   └── pue-benchmark-memo.md
-│   └── references/                    # Original competition briefs (do not edit)
+│   └── references/                    # Original research files
 │       ├── SPE-Energython-overview.md
 │       ├── Data-Center-Architecture-and-Load-Profiling.md
 │       ├── Data-Center-Optimization.md
@@ -184,7 +184,7 @@ Polished specifications for team review and judge presentation are in `docs/refi
 
 ## References
 
-Original competition briefs and research documents are in `docs/references/`. These are the source of truth for the project scope and should not be modified.
+Original competition briefs and research documents are in `docs/references/`. These are the source of truth for the project and most of the work was based off this research.(Edit or add id anything is missing)
 
 ## License
 
